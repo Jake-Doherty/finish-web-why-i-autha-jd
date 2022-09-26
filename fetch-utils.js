@@ -12,7 +12,7 @@ export function getUser() {
 
 export async function signUpUser(email, password) {
     // > Part A: supabase signup
-    return await client.auth.signUp({ 
+    return await client.auth.signUp({
         email,
         password,
     });
@@ -28,4 +28,5 @@ export async function signInUser(email, password) {
 
 export async function signOutUser() {
     // > Part B: supabase signout
+    return await client.auth.signOut();
 }
